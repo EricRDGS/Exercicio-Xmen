@@ -1,0 +1,34 @@
+@media (max-width: 450px){
+    body{
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .select h2{
+        margin-top: 50px;
+    }
+
+    .select-character{
+        flex-direction: column-reverse;
+    }
+
+    .select .characters{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+   .select .characters img{
+        width: 80px;
+        height: 124px;
+        margin: 0;
+   }
+
+   .selected-character .info .name-character{
+        margin: 0 20px;
+   }
+
+   .selected-character .info .info-character{
+        margin: 20px 60px 0;
+   }
+}

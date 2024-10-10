@@ -1,0 +1,126 @@
+html{
+    font-family: "Oxanium", system-ui;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: url(../images/bg-desktop\ 1.png), no-repeat;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo .logo{
+    margin: 18px 0 30px;
+}
+
+.select-character{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.select h2{
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(71, 244, 255, 1);
+}
+
+.select .characters{
+    margin-top: 20px;
+    display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+}
+
+.select .characters img{
+    margin: 0 20px 20px 0;
+    border-bottom: 4px solid rgba(71, 244, 255, 1);
+    padding: 4px;
+    opacity: .5;
+}
+
+.select .characters img:hover{
+    cursor: pointer;
+    opacity: 1;
+    border: 4px solid rgba(71, 244, 255, 1);
+}
+
+.select .characters .tempestade, .select .characters .vampira{
+    margin-right: 0;
+}
+
+.selected-character .character-ciclope{
+    content: url(../images/ciclope-raio\ 1.png);
+}
+
+.selected-character .character-jean-grey{
+    content: url(../images/jean-grey-com-raio\ 1.png);
+}
+
+.selected-character .character-lince-negra{
+    content: url(../images/lince-negra\ raio\ 1.png);
+}
+
+.selected-character .character-tempestade{
+    content: url(../images/tempestade-raio\ 1.png);
+}
+
+.selected-character .character-wolverine{
+    content: url(../images/wolverine-raio\ 1.png);
+}
+
+.selected-character .character-noturno{
+    content: url(../images/noturno-raio\ 1.png);
+}
+
+.selected-character .character-magneto{
+    content: url(../images/magneto-raio\ 1.png);
+}
+
+.selected-character .character-vampira{
+    content: url(../images/vampira-raio\ 1.png);
+}
+
+.selected-character .info{
+    max-width: 450px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.selected-character .info .name-character{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(71, 244, 255, 1);
+    margin-bottom: 20px;
+}
+
+.selected-character .info .info-character{
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.select .characters img.selected{
+    border: 4px solid rgba(71, 244, 255, 1);
+    opacity: 1;
+}
